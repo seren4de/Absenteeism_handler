@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import com.jfoenix.controls.*?>
+
+
+<!-- <?import javafx.scene.* ?> -->
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<FlowPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amsapp.controller.MainController">
+    <!-- <children> -->
+    <!-- <Button fx:id="goodByeWorldButton" layoutX="175.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#goodByeWorld" text="Good Bye World" />
+        <Label fx:id="label" layoutX="100.0" layoutY="150.0" prefHeight="25.0" prefWidth="100.0" wrapText="true" /> -->
+    <style>
+        -fx-alignment: center;
+        -fx-background-color:lightgrey;
+    </style>
+    <FlowPane>
+        <style>
+            -fx-alignment: center;
+            <!-- -fx-background-color:red; -->
+        </style>
+        <VBox Spacing="15">
+            <Label fx:id="lab" Text="You logged in as a root choose an option : "></Label>
+            <!-- <JFXTextField fx:id="Username" PromptText="User name"></JFXTextField> -->
+            <!-- <JFXPasswordField fx:id="Password" PromptText="Password"></JFXPasswordField> -->
+            <HBox Spacing="20">
+                <style></style>
+                <JFXButton fx:id="JFXB3" mnemonicParsing="false" onMouseClicked="#addStudent" text="AddStudent">
+                    <style></style>
+                </JFXButton>
+                <JFXButton fx:id="JFXB4" mnemonicParsing="false" onMouseClicked="#removeStudent" text="RemoveStudent">
+                    <style></style>
+                </JFXButton>
+                <JFXButton fx:id="JFXB5" mnemonicParsing="false" onMouseClicked="#listStudents" text="ListStudents">
+                    <style></style>
+                </JFXButton>
+                <JFXButton fx:id="JFXB6" mnemonicParsing="false" onMouseClicked="#exit" text="Exit">
+                    <style></style>
+                </JFXButton>
+            </HBox>
+
+        </VBox>
+    </FlowPane>
+    <!-- </children> -->
+</FlowPane>
