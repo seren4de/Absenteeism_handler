@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.validation.RequiredFieldValidator?>
+<?import javafx.collections.FXCollections?>
+<?import org.kordamp.ikonli.javafx.*?>
+<?import com.jfoenix.controls.JFXComboBox?>
+
+
+<!-- <?import javafx.scene.* ?> -->
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<FlowPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amsapp.controller.MainController">
+    <style>
+        -fx-alignment: center;
+        -fx-background-color:lightgrey;
+    </style>
+    <VBox Spacing="25">
+        <Label fx:id="lab11" Text="Present students are listed below :                                                        "></Label>
+
+        <JFXListView fx:id="list3" layoutX="800" layoutY="300">
+            <Label>
+
+                <graphic>
+                    <StackPane styleClass="custom-jfx-list-view-icon-container"></StackPane>
+                </graphic>
+            </Label>
+            <Label>
+
+                <graphic>
+                    <StackPane styleClass="custom-jfx-list-view-icon-container"></StackPane>
+                </graphic>
+            </Label>
+        </JFXListView>
+        <HBox Spacing="20" alignment="bottom_right">
+            <style>
+                -fx-alignment:"bottom_right";
+            </style>
+            <JFXButton fx:id="JFXBJ" mnemonicParsing="false" onMouseClicked="#BeginCheck" text="BeginCheck">
+                <style>
+                    -fx-alignment:"bottom_right";
+                </style>
+            </JFXButton>
+            <JFXButton fx:id="JFXBS" mnemonicParsing="false" onMouseClicked="#GOBACKP" text="GoBack">
+                <style>
+                    -fx-alignment:"bottom_right";
+                </style>
+            </JFXButton>
+        </HBox>
+    </VBox>
+
+
+</FlowPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import com.jfoenix.controls.*?>
+
+<!-- <?import javafx.scene.* ?> -->
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<FlowPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amsapp.controller.MainController">
+    <!-- <children> -->
+    <!-- <Button fx:id="goodByeWorldButton" layoutX="175.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#goodByeWorld" text="Good Bye World" />
+        <Label fx:id="label" layoutX="100.0" layoutY="150.0" prefHeight="25.0" prefWidth="100.0" wrapText="true" /> -->
+    <style>
+        -fx-alignment: center;
+        -fx-background-color:lightgrey;
+    </style>
+    <FlowPane>
+        <style>
+            -fx-alignment: center;
+            <!-- -fx-background-color:red; -->
+        </style>
+        <VBox Spacing="20">
+            <JFXTextField fx:id="StudentName" PromptText="StudentName"></JFXTextField>
+            <JFXTextField fx:id="StudentID" PromptText="StudentID"></JFXTextField>
+            <JFXTextField fx:id="Departement" PromptText="Departement"></JFXTextField>
+            <HBox Spacing="20">
+                <style></style>
+                <JFXButton fx:id="JFXBX" mnemonicParsing="false" onMouseClicked="#clears" text="ClearInput">
+                    <style></style>
+                </JFXButton>
+                <JFXButton fx:id="JFXBY" mnemonicParsing="false" onMouseClicked="#adds" text="Add">
+                    <style></style>
+                </JFXButton>
+                <JFXButton fx:id="JFXBH" mnemonicParsing="false" onMouseClicked="#GOBACKS" text="GoBackToOptions">
+                    <style></style>
+                </JFXButton>
+                <!-- <JFXButton fx:id="JFXB7" mnemonicParsing="false" onMouseClicked="#next" text="Next" visible="false">
+                    <style></style>
+                </JFXButton> -->
+            </HBox>
+            <Label fx:id="lab9" Text="scanning mode ... "></Label>
+        </VBox>
+    </FlowPane>
+    <!-- </children> -->
+</FlowPane>
